@@ -1,5 +1,5 @@
 
-# Proyecto Final Modulo 4
+# Proyecto Final Modulo 5
 
 Este repositorio contiene los repositorios del backend y del frontend de la Galería de Productos con Next.js.
 
@@ -9,20 +9,37 @@ Sigue los pasos a continuación para instalar y ejecutar la aplicación:
 
 1. Clonar el repositorio:
     ```bash
-    git clone git https://github.com/vaniailka78/Modulo4-Proyecto-Final.git
-    cd product-gallery
+    git clone git https://github.com/vaniailka78/Modulo5-ProyectoFinal.git
+    cd Modulo5-ProyectoFinal
     ```
-2. Preparar el backend:
+2. Preparar el backend: Desde la carpeta Modulo5-ProyectoFinal
     ```bash
-   cd Modulo4-Proyecto-Final
    cd nestjs-product-gallery
-
-3. Seguir las instrucciones del readme del BACKEND
-
-4. Mantener el servidor corriendo en http://localhost:3000/
-
-5. Para el frontend: (Desde la carpeta: Modulo4-Proyecto-Final)
+   npm install
+    ```
+3. Correr las pruebas del backend
+    ```bash
+   npm runtest:unitarias
+   npm runtest:unitariasController
+   npm runtest:integracion
+   npm runtest:aceptacion
+    ```
+4. Correr el servidor en http://localhost:3000
+    ```bash
+   npm run start
+    ```
+5. Para el frontend: Desde la carpeta Modulo5-ProyectoFinal
     ```bash
    cd proyecto-final-galeria-productos
-
-6. Seguir las instrucciones del readme del FRONTEND
+   npm install
+    ```
+6. Correr el frontend en http://localhost:5050
+    ```bash
+   npm run build
+   npm run start
+    ```
+7. Correr las pruebas del frontend
+    ```bash
+   npx cypress open
+    ```
+8. Elegir las pruebas E2E en el Cypress
